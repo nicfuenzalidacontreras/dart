@@ -43,5 +43,35 @@ main() {
 
   // print( villanos );
   var villanosSet = villanos.toSet();
-  // print(villanosSet.toList());
+  // print(villanosSet.toList());}}
+
+  // ======== Sets
+  Set<String> villanos2 = { 'Lex','Red Skull','Doom' };
+
+  villanos2.add('Duende Verde');
+  villanos2.add('Duende Verde');
+  villanos2.add('Duende Verde');
+  villanos2.add('Duende Verde');
+  villanos2.add('Duende Verde');
+
+  // print( villanos2 );
+
+  // ====== Maps            Diccionarios / Objetos literales
+  Map<int, dynamic> ironman = {
+    1: 'Tony Stark',
+    2: 'Inteligencia y el dinero',
+    3: 9000,
+  };
+
+  // print( ironman[3] )
+  Map<String, dynamic> capitan = new Map();
+
+  capitan.addAll({
+    'nombre': 'Steve',
+    'poder' : 'Soportar droga sin morir',
+    'nivel' : 5000
+  });
+  // capitan.addAll(ironman);
+
+  print( capitan );
 }
